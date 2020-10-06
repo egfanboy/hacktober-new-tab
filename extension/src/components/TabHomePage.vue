@@ -1,15 +1,16 @@
 <template>
-    <div class="hello">
-        <h1>{{ msg }}</h1>
+    <div>
+        <h1>🎃 Hacktoberfest 2020 New Tab Page 🎃</h1>
+
+        <MostViewed />
     </div>
 </template>
 
 <script>
+import MostViewed from './most-viewed/MostViewed.vue';
 export default {
-    name: 'HelloWorld',
-    props: {
-        msg: String,
-    },
+    name: 'TabHomePage',
+    components: { MostViewed },
 };
 </script>
 

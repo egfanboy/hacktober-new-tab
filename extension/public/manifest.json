@@ -1,14 +1,15 @@
 {
-  "name": "Hacktober New Tab",
-  "short_name": "HNT",
-  "version": "0.0.1",
-  "description": "New Tab Landing page created for Hacktoberfest 2020",
-  "manifest_version": 2,
-  "permissions": ["unlimitedStorage", "storage"],
-  "web_accessible_resources": ["js/*.js"],
-  "chrome_url_overrides": {
-    "newtab": "./index.html"
-  },
-  "content_scripts": [],
-  "minimum_chrome_version": "32"
+    "name": "Hacktober New Tab",
+    "short_name": "HNT",
+    "version": "0.0.1",
+    "description": "New Tab Landing page created for Hacktoberfest 2020",
+    "manifest_version": 2,
+    "permissions": ["unlimitedStorage", "storage", "history", "topSites", "chrome://favicon/*"],
+    "content_security_policy": "img-src chrome://favicon; script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "web_accessible_resources": ["js/*.js"],
+    "chrome_url_overrides": {
+        "newtab": "./index.html"
+    },
+    "content_scripts": [],
+    "minimum_chrome_version": "32"
 }

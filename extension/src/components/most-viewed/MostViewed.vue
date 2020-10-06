@@ -40,7 +40,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 .most-viewed-container {
     display: flex;
     justify-content: center;
@@ -50,10 +50,9 @@ export default {
     justify-content: center;
     align-items: center;
     width: 100px;
-}
-
-.most-viewed-item:hover {
-    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .viewed-text {

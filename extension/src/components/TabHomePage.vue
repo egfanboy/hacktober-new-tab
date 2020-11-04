@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="tabhome">
         <h1>🎃 Hacktoberfest 2020 New Tab Page 🎃</h1>
         <Button />
         <MostViewed />
@@ -18,6 +18,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 $link-color: #42b983;
+$z-idx: 2;
+
+#tabhome {
+    z-index: $z-idx;
+    color: white;
+}
 
 h3 {
     margin: 40px 0 0;

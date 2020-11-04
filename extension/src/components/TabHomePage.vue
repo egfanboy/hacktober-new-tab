@@ -1,16 +1,17 @@
 <template>
     <div>
         <h1>🎃 Hacktoberfest 2020 New Tab Page 🎃</h1>
-
+        <Button />
         <MostViewed />
     </div>
 </template>
 
 <script>
 import MostViewed from './most-viewed/MostViewed.vue';
+import Button from './button-to/Button.vue';
 export default {
     name: 'TabHomePage',
-    components: { MostViewed },
+    components: { MostViewed, Button },
 };
 </script>
 
